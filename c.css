@@ -1,0 +1,429 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.main {
+    background-image: url("assets/img/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    background-size: max(1200px 100vw);
+}
+
+.main .box {
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    max-width: 80vw;
+    align-items: center;
+    margin: auto;
+    width: 75vw;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+nav img {
+    height: 92px;
+    width: 80px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button,select {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 96px);
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    flex-direction: column;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    gap: 18px;
+    padding: 0 30px;
+}
+
+.hero>:nth-child(1) {
+    font-weight: 700;
+    font-weight: bolder;
+    font-size: 35px;
+    text-align: center;
+}
+
+.hero>:nth-child(2) {
+    font-weight: 500;
+    font-size: 17px;
+    text-align: center;
+}
+
+.hero>:nth-child(3) {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.separation {
+    height: 6px;
+    background-color: rgb(34, 32, 32);
+    z-index: 80;
+}
+
+.btn {
+    border-radius: 2px;
+    padding: 5px 20px;
+    color: white;
+}
+
+.btn-en {
+    padding: 3px 16px 4px 9px;
+    background-color: rgba(34, 32, 32, 0.648);
+    border: 1px solid rgba(209, 197, 197, 0.482);
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn-red-sn {
+    color: white;
+    background-color: red;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 7px 8px 4px 9px;
+    border: none;    
+}
+
+.in-en {
+    height: 12px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.241);
+    border: 1px solid rgb(108, 103, 103);
+    color: rgb(255, 255, 255);
+    padding: 12px 12px;
+    margin-right: 10px;
+    border-radius: 3px;
+    justify-content: left;
+    font-size: 10px;
+}
+
+.btn-red-gs {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 12px 12px;
+    border: none;
+    font-weight: bold;
+}
+
+.first {
+    display: flex;
+    color: white;
+    height: 84vh;
+    justify-content: center;
+    align-items: center;
+}
+.LinesFirst {
+    display: flex;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    width: 60vw;
+    z-index: 11;
+}
+
+section.first > div {
+    flex-direction: column;
+}
+section.first > div :first-child {
+    font-size: 34px;
+    font-weight: bolder;
+}
+section.first > div :nth-child(2) {    
+    font-size: 15px;    
+}
+
+.Secimg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Secimg img {
+    width: 35vw;
+    position: absolute;
+    z-index: 10;
+    right: 20px;
+}
+.Secimg video {
+    width: 24vw;
+    position: relative;
+    right: 85px;
+}
+
+.second {
+    display: flex;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    height: 74vh;
+    justify-content: center; 
+    align-items: center;
+    font-weight: bold;
+    gap: 30px;
+}
+.second img {    
+    width: 35vw;
+    height: 55vh;
+}
+.LinesSecond span {
+    font-size: 36px;
+    font-weight: bolder;
+}
+.LinesSecond p {
+    font-size: 15px;  
+}
+
+.third {
+    display: flex;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    height: 89vh;
+    justify-content: center; 
+    align-items: center;
+    gap: 70px;
+}
+.Linesthird {
+    justify-content: center;
+    align-items: center;
+}
+.Linesthird span {
+    font-size: 34px;
+    font-weight: bolder;
+}
+.Linesthird p {
+    font-size: 20px;  
+}
+.thirdImg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thirdImg img {
+    display: flex;
+    width: 35vw;
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+}
+.thirdImg video {
+    top: 15px;
+    width: 22vw;
+    position: relative;    
+}
+
+.fourth {
+    height: 84vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: bold;
+}
+.fourth img {
+    min-height: 38vh;
+    width: 38vw;
+    z-index: 9;
+}
+.Linesfourth {
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.Linesfourth span {
+    font-size: 34px;
+    font-weight: bolder;
+}
+.Linesfourth p {
+    font-size: 18px;  
+}
+
+.faq {
+    display: flex;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: white;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 50px 20px 0px 40px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.s1 {    
+    display: flex;
+    justify-content: space-between;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    align-items: center;
+    color: white;
+    padding: 10px 8px 10px 20px;
+    max-width: 72vw;
+    background-color: rgba(128, 128, 128, 0.309);  
+    margin: 6px auto;
+}
+.s1 img {
+    position: relative;
+    z-index: 10;
+    color: brown;
+}
+.s1:hover {
+    background-color: rgb(60, 59, 59);
+}
+h3 {
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin: 20px auto;
+}
+#last {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+/* Footer */
+.footer, h6 {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    max-width: 75vw;
+    margin: auto;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.7);
+}
+.upper {
+    display: flex;    
+    max-width: 60vw;
+    font-size: 12px;
+    align-items: center;    
+    margin: 10px;    
+}
+.bottom {
+    font-size: 6px;
+    color: rgba(255, 255, 255, 0.7);
+    display: grid;    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.bottom li {
+    margin: 16px 0px 0px 12px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 10px;
+    justify-content: center;
+    list-style: none;
+}
+a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;    
+}
+.f {
+    padding: 0 20px 0px 0px;
+}
+h6 {
+    margin: 10px 0px 0px 0px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .hero {
+        padding: 0 20px;
+    }
+    .Secimg img, .Secimg video {
+        width: 30vw;
+        right: 10px;
+    }
+    .thirdImg img, .thirdImg video {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+    }
+    .hero {
+        height: calc(100% - 70px);
+        padding: 0 10px;
+    }
+    .Secimg img, .Secimg video, .thirdImg img, .thirdImg video {
+        width: 35vw;
+        right: 0;
+    }
+    .first, .second, .third, .fourth {
+        flex-direction: column;
+        text-align: center;
+    }
+    .second img, .thirdImg img {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 768px) {
+    nav img {
+        height: 70px;
+        width: 60px;
+    }
+    .hero {
+        height: calc(100% - 50px);
+    }
+    .Secimg img, .Secimg video, .thirdImg img, .thirdImg video {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 576px) {
+    nav img {
+        height: 50px;
+        width: 40px;
+    }
+    .hero {
+        padding: 0 5px;
+    }
+    .Secimg img, .Secimg video, .thirdImg img, .thirdImg video {
+        width: 60vw;
+    }
+    .btn, .btn-en, .btn-red-sn, .btn-red-gs {
+        font-size: 8px;
+        padding: 5px 10px;
+    }
+    .in-en {
+        width: 150px;
+    }
+    .upper {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .bottom {
+        grid-template-columns: 1fr 1fr;
+    }
+}
